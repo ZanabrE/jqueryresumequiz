@@ -1,0 +1,615 @@
+/*Wildcard ( * ) selector it will select all elements inside my document.
+The Wildcard selector can also select all elements inside another element.
+Sample: div * {background-color: yellow; }
+Ernesto L Zanabria. Sunday, March 15, 2020.
+*/
+
+* {
+	box-sizing: border-box;
+	
+}
+
+
+/*The .class selector selects elements with a specific class attribute.
+<header> element with class="document". To select elements with specific class, write a period (.) character, followed by the name of the class.
+<div> element with class="header". It will style this specific group in my document. 
+<h1>, <p>, <a>, and <img> elements inside my <div> element for styling such as:
+background-color, padding, margin, width, height, display, float, font-family, font-size,
+color, text-align, and borders.
+*/
+.document {
+	background-color: rgb(180, 207, 236);
+	padding: 5px;
+	margin: 50px;
+	width: 95%;
+	height: 50%;
+	display: inline-block;
+}
+
+.header h1 {
+	font-family: sans-serif;
+	font-size: 44pt;
+	color: rgb(53, 126, 199);
+	text-align: center;
+	float: right;
+	margin: 30px;
+	padding: 30px;
+	
+}
+
+
+.header img {
+	border-radius: 50%;
+	border-color: rgb(53, 126, 199);
+	border: solid 4pt rgb(53, 126, 199);
+	margin: 10px;
+	
+}
+
+
+/*
+<section> element with class="resume" this will specify inside the group what I need to alter.
+<div> element with class="contact" that I can make any alterations inside that group.
+<h2>, <p>, <b>, and <a> elements that I can give specific alterations in that group such as:
+margins, paddings, font-family, font-size, color, and font-weight, text-decoration, link, visited,
+and hover.
+*/
+
+.resume {
+	margin-right: 50px;
+	padding-left: 50px;
+}
+
+
+.contact h2 {
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: rgb(53, 126, 199);
+	margin-bottom: 10px;
+	
+}
+
+.contact p {
+	font-family: serif;
+	font-size: 12pt;
+	margin-bottom: 5px;
+	
+}
+
+.contact b {
+	font-family: serif;
+	font-size: 14pt;
+	
+}
+
+.contact a:link {
+	text-decoration: none;
+	font-family: serif;
+	
+}
+
+.contact a:visited {
+	color: purple;
+	
+}
+
+.contact a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+
+/*
+<section> element with class="resume" this will specify inside the group what I need to alter.
+<div> element with class="summary" that I can make any alterations inside that group.
+<h3>, <p>, <em>, <i>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, font-style, color, margin, text-decoration, font-weight, link, visited, and hover.
+*/
+.summary h3 {
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: rgb(53, 126, 199);
+	margin-bottom: 10px;
+	
+}
+
+.summary hr {
+	color: rgb(53, 126, 199);
+	
+}
+
+.summary div p{
+	position: flex;
+	
+}
+
+.summary .answer1 {
+	/*visibility: hidden;*/
+	display: inline;
+	position: relative;
+	down: 20px;
+	left: 2px;
+	font-size: 16pt;
+	margin: 10px 0px;
+	color: rgba(53, 126, 199, 0.5);
+	
+}/*computer class visibility,hidden, and visible*/
+
+.summary div:hover answer1 {
+	visibility: visible;
+	
+}/*visibility,hidden, and visible*/
+
+.summary .answer2 {
+	/*visibility: hidden;*/
+	display: inline;
+	position: relative;
+	down: 20px;
+	left: 2px;
+	font-size: 16pt;
+	margin: 10px 0px;
+	color: rgba(53, 126, 199, 0.5);
+	
+}
+
+.summary div:hover .answer2 {
+	visibility: visible;
+	
+}/*developer class visibility,hidden, and visible*/
+
+.summary .answer3 {
+	/*visibility: hidden;*/
+	display: inline;
+	position: relative;
+	down: 20px;
+	left: 2px;
+	font-size: 16pt;
+	margin: 10px 0px;
+	color: rgba(53, 126, 199, 0.5);
+	
+}
+
+.summary div:hover .answer3 {
+	visibility: visible;
+	
+}/*script class visibility,hidden, and visible*/
+
+.summary p {
+	font-family: serif;
+	font-size: 12pt;
+	margin-bottom: 5px;
+	
+}
+
+.summary em {
+	font-size: 1em;
+	font-style: italic;
+	
+}
+
+.summary a:link {
+	text-decoration: none;
+	
+}
+
+.summary a:visited {
+	color: purple;
+	
+}
+
+.summary a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+paddings, and margins.
+*/
+.resumesection {
+	padding-left: 50px;
+	margin-right: 50px;
+	
+}
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="education" that I can make any alterations inside that group.
+<h4>, <hr>, <b>, <i>, <ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, paddings, text-decoration, font-weight, link, visited, and hover.
+*/
+.education {
+	position: relative;
+	
+}
+
+.education h4 {
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+.education hr {
+	color: rgb(53, 126, 199);
+	
+}
+
+.education .answer4 {
+	/*visibility: hidden;*/
+	display: inline;
+	position: relative;
+	top: 14px;
+	left: 2px;
+	font-size: 16pt;
+	margin: 10px 0px;
+	color: rgba(53, 126, 199, 0.5);
+	
+}/*visibility,hidden, and visible*/
+
+.education div:hover .answer4 {
+	visibility: visible;
+	
+}/*visibility,hidden, and visible*/
+
+.education li, b {
+	font-family: serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+}
+
+.education li {
+	font-family: serif;
+	font-size: 13pt;	
+	margin-bottom: 5px;
+	
+}
+
+.education a:link {
+	text-decoration: none;
+	
+}
+
+.education a:visited {
+	color: light-blue;
+	
+}
+
+.education a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="skills" that I can make any alterations inside that group.
+<h5>, <hr>, <ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, text-decoration, font-weight, link, visited, and hover.
+*/
+.skills h5 {
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+.skills hr {
+	color: rgb(53, 126, 199);
+	
+}
+
+.skills li {
+	font-family: serif;
+	font-size: 13pt;
+	margin-bottom: 5px;
+	
+}
+
+
+.skills a:link {
+	text-decoration: none;
+	
+}
+
+.skills a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+.skills a:visited {
+	color: purple;
+	
+}
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="experience" that I can make any alterations inside that group.
+<h6>, <hr>, <b>, <em>, <ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, paddings, text-decoration, font-style, font-weight, link, visited, and hover.
+*/
+.experience h6 {
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+.experience hr {
+	color: rgb(53, 126, 199);
+	
+}
+
+.experience li, b {
+	font-family: serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	
+}
+
+.experience li {
+	font-family: serif;
+	font-size: 13pt;
+	margin-bottom: 5px;
+}
+
+.experience em {
+	font-style: italic;
+	font-size: 1em;
+	
+}
+
+
+.experience a:link {
+	text-decoration: none;
+	
+}
+
+.experience a:visited {
+	color: purple;
+	
+}
+
+.experience a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="assistant" that I can make any alterations inside that group.
+<ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, text-decoration, font-weight, link, visited, and hover.
+*/
+.assistant li, b {
+	font-family: sans-serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	
+}
+
+.assistant li {
+	font-family: serif;
+	font-size: 13pt;
+	margin-bottom: 5px;
+	
+}
+
+.assistant a:link {
+	text-decoration: none;
+	
+}
+
+.assistant a:visited {
+	color: purple;
+	
+}
+
+.assistant a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+}
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="pharmacy" that I can make any alterations inside that group.
+<i>, <ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, paddings, text-decoration, font-weight, link, visited, and hover.
+*/
+.pharmacy li, b {
+	font-family: sans-serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	
+}
+
+.pharmacy li {
+	font-family: serif;
+	font-size: 13pt;
+	margin-bottom: 5px;
+	
+}
+
+.pharmacy a:link {
+	text-decoration: none;
+	
+}
+
+.pharmacy a:visited {
+	color: purple;
+	
+}
+
+.pharmacy a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+	
+}
+
+
+/*
+<section> element with class="resumesection" this will specify inside the group what I need to alter.
+<div> element with class="data" that I can make any alterations inside that group.
+<b>, <i>, <ul>, <li>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, color, margins, text-decoration, font-weight, link, visited, and hover.
+*/
+.data li, b {
+	font-family: sans-serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	
+}
+
+.data li {
+	font-family: serif;
+	font-size: 13pt;
+	margin-bottom: 5px;
+	
+}
+
+.data a:link {
+	text-decoration: none;
+	
+}
+
+.data a:visited {
+	color: purple;
+}
+
+.data a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+	
+}
+
+.data hr {
+	color: rgb(53, 126, 199);
+}
+
+/*
+<section> element with class="last" this will specify inside the group what I need to alter.
+<div> element with class="last" that I can make any alterations inside that group.
+<h6>, <em>, <aside>, <p>, and <a> elements that I can give specific alterations in that group such as:
+font-family, font-size, font-style, color, margins, paddings, text-decoration, font-weight, link, visited, and hover.
+*/
+.last {
+	margin: 50px;
+	padding: 5px;
+	
+}
+
+.last article {
+	float: right;
+	width: 30%;
+	
+}
+
+
+.last p {
+	font-family: serif;
+	font-style: italic;
+	font-size: 13pt;
+	
+}
+
+.about h6, em {
+	font-style: italic;
+	font-family: sans-serif; 
+	font-size: 1em;
+	
+}
+
+.about a:link {
+	text-decoration: none;
+	
+}
+
+.about a:visited {
+	color: purple;
+	
+}
+
+.about a:hover {
+	font-weight: bold;
+	color: rgb(53, 126, 199);
+	
+}
+
+
+/*
+<footer> element with class="footer" this will specify inside the group what I need to alter.
+<p> elements that I can give specific alterations in that group such as:
+font-family, font-size, background-color, margins, paddings, and text-align.
+*/
+.footer {
+	margin: 50px;
+	padding: 50px;
+	background-color: rgb(180, 207, 236);
+	text-align: center;
+	font-family: serif;
+	
+}
+
+
+.footer p {
+	font-size: 13pt;
+	
+}
+
+
+.green {
+	background-color: dark green;
+	color: white;
+	display: visible;
+}
+
+.red {
+	background-color: red;
+	color: white;
+	display: visible;
+}
+
+.facts {
+	font-family: times;
+	font-size: 14pt;
+	margin: 50px;
+	padding: 50px;
+	background-color: rgba(180, 207, 236, 0.3);
+}
+
+.title h6 {
+	font-family: times;
+	font-size:22pt;
+	color: rgb(53, 126, 199);
+	text-align: center;
+	
+}
+
+#question1 {
+	font-size: 16pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+#question2 {
+	font-size: 16pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+#question3 {
+	font-size: 16pt;
+	color: rgb(53, 126, 199);
+	
+}
+
+#question4 {
+	font-size: 16pt;
+	color: rgb(53, 126, 199);
+	
+}
