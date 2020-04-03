@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- On <head> element I have <title> element for my title in my document, then 
+	<meta> element provided structured metadata about a Web page. Used either to emulate
+	the use of an HTTP response header field, or to embed additional metadata within 
+	the HTML document.
+	<meta charset (character set)="utf-8 (is character encoding capable of encoding all characters on the web.)">
+	<meta name="viewport" contnet="width=device-width, initial-scale=1"> these tags will make a more responsive webpage.
+	Ernesto L Zanabria. Saturday, March 28, 2020.-->
+	<title>jQuery Resume Quiz | Ernesto L Zanabria</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="jqueryresumequiz.css" type="text/css">
+	
+	<script src="jQuery/jquery.min.js"></script>
+	
+	<script>
+		$(function() {
+			alert('Hello, my name is Ernesto. Welcome to my Webpage resume');
+			alert('There will be 4 questions about my resume, after you go through it.');
+		
+		});//end ready
+		
+		$(function() {
+			$('.ans1').hide();
+			$('#question1').on('click',function() {
+			var answer = $('#ans1')
+				if('#ans1') {
+					$('.ans1').show();
+				}
+			});//end of hide and show for question 1.
+			
+		});//end question 1.
+		
+		$(function() {
+			$('.ans2').hide();
+			$('#question2').on('click',function() {
+			var answer = $('#ans2')
+				if('#ans2') {
+					$('.ans2').show();
+				}
+			});//end of hide and show for question 2.
+			
+		});//end question 2.
+		
+		$(function() {
+			$('.ans3').hide();
+			$('#question3').on('click',function() {
+			var answer = $('#ans3')
+				if('#ans3') {
+					$('.ans3').show();
+					$('.ans3').addClass('close');
+				}
+				/*else {
+					$('.ans3').hide();
+				}//I wanted to add the else statement here to hide if the answer is correct and show the correct answer under the input*/
+			});//end of hide and show for question 3.
+		});//end question 3.
+		
+		$(function() {
+			$('.ans4').hide();
+			$('#question4').on('click',function() {
+			var answer = $('#ans4')
+				if('#ans4') {
+					$('.ans4').show();
+				}
+			});//end of hide and show for question 4.
+		});//end question 4.
+	
+	</script>
+</head>
+
+<body>
+	<!-- <header> element represents inroductory content.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h1> element define HTML headings.
+	<p> element represents a paragraph.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	target: attribute specifies where to open the linked document. Also, can have different values: _blank (Opens the linked document a new window), 
+	_self (Opens the linked document in the same window/tab as it was clicked (this is default)), _parent (Opens the linked document in the parent frame),
+	_top (Opens the linked document in the full body of the window), framename (Opens the linked document in a named frame).
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	<header class="document">
+		<div class="header">
+			<h1>ERNESTO L ZANABRIA</h1>
+			<p><img src="zanabrialogo.png" alt="Ernesto Zanabria" style="width:200px;height:200px;float:left"></p>
+		</div>
+	</header>	
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h2> element define HTML headings.
+	<p> element represents a paragraph.
+	<b> element specifies bold text is used to draw the readers' attention.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	<section class="resume">
+		<div class="contact">
+			<h2>CONTACT INFORMATION</h2>
+			<p><b>NAME:</b> Ernesto L Zanabria</p>
+			<p><b>ADDRESS:</b> 13 Rutherglen Ave.</p>
+			<p><b>PHONE NUMBER:</b>
+			<a href="tel:9543984031"> (954)398-4031</a></p>
+			<p><b>EMAIL:</b>
+			<a href="mailto:ezanabria@my.ccri.edu"> ezanabria@my.ccri.edu</a><p>
+		</div>
+		<br>
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h3> element define HTML headings.
+	<p> element represents a paragraph.
+	<b> element specifies bold text is used to draw the readers' attention.
+	<em> element emphasize content of a text.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	
+		<div class="summary">
+			<div class="concept">
+				<h3>SUMMARY</h3><hr>
+				<p><span class='answer1'>Computer Studies/</span><em>Info.Process</em> eager to apply the skills learned through academic years'</p>
+				<p>willing to work in a start-up company or at a great company as a Developer/Programmer, <span class='answer2'>Front-End Developer,</span></p>
+				<p><i>or Full-Stack Developer</i> currently in the <a href="https://www.ccri.edu/catalog/current/programs/COMI/"><em>Computer Studies/Info.Process</em></a></p>
+				<p>Computer Programming at <a href="https://www.ccri.edu/">CRRI</a>. In my academic learning there is a programming language for web developing</p>
+				<p>that I love called <span class="answer3">JavaScript.</span></p>
+			</div>
+		</div>
+		<br>
+	</section>
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h4> element define HTML headings.
+	<hr> element is used to separate content (or define a change) in an HTML page.
+	<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+	<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+	each individual item within that list.
+	<b> element specifies bold text is used to draw the readers' attention.
+	<i> element represents italic content of a text.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	<section class="resumesection">
+		<div class="education">
+			<h4>EDUCATION</h4><hr>
+				<p><b>ASSOCIATES IN SCIENCE | GRADUATING DECEMBER <i>2020</i> | <a href="https://www.ccri.edu/">COMMUNITY COLLEGE OF RHODE ISLAND</a><span class="answer4">, WARWICK, RI.</span></b></p>
+				<ul>
+					<li><b>MAJOR:</b> Computer Studies/Info.Process.</li>
+					<li><b>CONCENTRATION:</b> Computer Programming (CPRD).</li>
+				</ul>
+		</div>
+		<br>
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h5> element define HTML headings.
+	&amp; is a character entity used in HTML. It is "&" symbol.
+	<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+	<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+	each individual item within that list.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	
+		<div class="skills">
+			<h5>SKILLS &amp; ABILITIES</h5><hr>
+				<ul>
+					<li>Intro to Computers.</li>
+					<li>Programming Concepts.</li>
+					<li>Computer Networking Linux.</li>
+					<li>System Analysis-Design.</li>
+					<li>Programming in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>.</li>
+					<li>Advance Programming in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>.</li>
+					<li>Microsoft Project 2016</li>
+					<li><a href="https://www.python.org/">Python</a>.</li>
+					<li><a href="https://www.java.com/en/">Java</a> Programming Language.</li>
+					<li>Operating System.</li>
+					<li>Business Management.</li>
+					<li><a href="https://www.w3schools.com/html/html_css.asp">HTML5/CSS</a>.</li>
+					<li><a href="https://www.javascript.com/">JavaScript</a> Programming.</li>
+				</ul>
+		</div>
+		<br>
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h6> element define HTML headings.
+	<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+	<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+	each individual item within that list.
+	<em> element emphasize content of a text.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	
+		<div class="experience">
+			<h6>EXPERIENCE</h6><hr>
+				
+				<p><b>PATIENT CARE PHARMACY TECHNICIAN | <a href="https://www.cvs.com/">CVS</a>, CUMBERLAND, RI | NOVEMBER <i>2019</i> TO PRESENT</b></p>
+				
+				<ul>
+					<li>Setting-up desktop to retrieve information from the database.</li>
+					<li>Ensure that desktop works propertly <em>(software, hardware)</em>.</li>
+					<li>Check emails of priority task provided by a <i>Supervisor/Manager</i> for an efficient and productive workday.</li>
+					<li>Sign-in into the software <a href="https://www.avaya.com/en/"><em>Avaya</em></a> to link to RxConnect to retrieve and access patients' profile.</li>
+					<li>Retrieve corporate database to get accurate information about patients' information insurance, medications, doctors, and CVS pharmacy.</li>
+					<li>Verify <em>HIPAA</em> <a href="https://www.cdc.gov/phlp/publications/topic/hipaa.html"><i>(Health Insurance Portability and Accountability Act of 1996)</i></a>
+					to protect patients' privacy or sensitive information.</li>
+					<li>Retrieve CRM <a href="https://support.avaya.com/products/P1645/avaya-crm-connector"><i>(Customer Relationship Management)</i></a> software
+					to see activities and documentation from other <a href="https://www.ptcb.org/credentials/certified-pharmacy-technician"><em>Pharmacy Technician</em></a> (CPhT).</li>
+					<li>Browsers <em>(Chrome, and Internet Explorer)</em>. Softwares <em>(Skype, Microsoft Word, Excel, and Access)</em> to be able to interact with other <em>Pharmacy Technicians/Pharmacist</em>.</li>
+				</ul>
+		</div>
+		<br>
+		&nbsp;
+		<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+		to style them with CSS or to perform certain task with JavaScript.
+		<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+		<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+		each individual item within that list.
+		<i> element represents italic content of a text.
+		&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+		<div class="assistant">
+			
+			<p><b>ASSISTANT OPERATOR II | <a href="https://www.bostonscientific.com/content/gwc/en-US/Home.html">BOSTON SCIENTIFIC</a>, COVENTRY, RI | APRIL <i>2016</i> TO NOVEMBER <i>2019</i></b></p>
+			
+			<ul>
+				<li>Ensure that the Biological indicator is in the incubator as part of the process of the sterilization.</li>
+				<li>Get together with the team for the daily task discuss with the team members about any new procedure in the<br>
+				sterilization process that the corporation sends to operation.</li>
+				<li>Analyze the best way to execute our task for a great result.</li>
+				<li>Analytical/Leading spirit with a great focus on the production for the company and the benefit of our team.</li>
+				<li>Check emails for important task about a product to be sterilized, work with Microsoft Office.</li>
+				<li>Sterilization final process collects the Biological indicators to the Biological room and inspects them<br>
+				for a positive BI (positive virus) which an SPR (Sterilized Product Requirement) must be filled as part of the process.</li>
+			</ul>
+		</div>
+		<br>
+		&nbsp;
+		<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+		to style them with CSS or to perform certain task with JavaScript.
+		<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+		<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+		each individual item within that list.
+		<i> element represents italic content of a text.
+		&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+		<div class="pharmacy">
+			
+			<p><b>PHARMACY TECHNICIAN I | <a href="https://www.riteaid.com/">RITE AID PHARMACY</a>, PROVIDENCE, RI | JUNE <i>2015</i> TO APRIL <i>2016</i></b></p>
+			
+			<ul>	
+				<li>Preparation of medications for patients.</li>
+				<li>Receiving and verifying the prescriptions.</li>
+				<li>Pricing and filling of prescriptions.</li>
+				<li>Obtaining pharmacist's approval.</li>
+				<li>Completing patient paperwork related to the filling of the prescriptions.</li>
+				<li>Assisting with insurance claims processing (usually a pharmacistwill handle this, but assistant's help will <br>
+				be needed - the entire process is done online.)</li>
+				<li>Ensuring the availability of drugs by delivering them to patients or facilities.</li>
+				<li>Maintaining pharmacy's (and its patients' employees') safety by adhering to infection-control procedures, <br>
+				policies, and regulations.</li>
+			</ul>
+		</div>
+		<br>
+		&nbsp;
+		<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+		to style them with CSS or to perform certain task with JavaScript.
+		<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+		<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+		each individual item within that list.
+		<i> element represents italic content of a text.
+		&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+		<div class="data">
+			
+			<p><b>DATA ENTRY PROFILE CUSTOMERS AND VERIFICATION OF CREDIT | <a href="https://www.citizensbank.com/HomePage.aspx">CITIZENS BANK</a>, EAST PROVIDENCE, RI | OCTOBER <i>2015</i>
+				TO DECEMBER <i>2015</i></b></p>
+			
+			<ul>
+				<li>Look for any discrepancies from costumers to assure the information provided is by QC department.</li>
+				<li>Processes customer and account source documents by reviewing data for deficiencies.</li>
+				<li>Resolves deficiencies by using standard procedures or returning incomplete documents to the team leader for <br>
+				resolutions.</li>
+				<li>Entering customer and account data by inputing alphabetic and numeric information on keyboard or optical <br>
+				scanner according to screen format.</li>
+				<li>Maintains data entry requirements by following data program techniques and procedures.</li>
+				<li>Contributes to team effort by accomplishing related results as needed.</li>
+				<li>Microsoft Excel and Internet Explorer to provide accurate information about any discrepancy.</li>
+			</ul>
+		<br>
+		<br>
+		<hr>
+		</div>
+		
+		<br>
+	</section>
+		&nbsp;
+		<!-- <hr> element is used to separate content (or define a change) in an HTML page.
+		<footer> element is a structural element used to identify the footer of a page, document, article, or section. A <footer> typically
+		contains copyright and authorship information or navigational elements.
+		<p> element represents a paragraph.
+		&copy; is a character entity used in HTML. It is a copyright symbol.-->
+		
+		
+	<section class="facts">
+		<div class="end">
+			<div class="title">
+				<h6>Resume Questions</h6>
+				<div id="question1">What is my major?</div>
+				<p><input name="textfield" id="ans1" type="text"/></p>
+				<div class="ans1">Computer Studies</div>
+				<div id="question2">What are my goals after graduation?</div>
+				<p><input name="textfield" id="ans2" type="text"/></p>
+				<div class="ans2">Front-End Developer</div>
+				<div id="question3">What is the programming language use for Web Developing?</div>
+				<p><input name="texfield" id="ans3" type="text"/></p>
+				<div class="ans3">JavaScript</div>
+				<div id="question4">Where is Community College of Rhode Island located?</div>
+				<p><input name="textfield" id="ans4" type="text"/></p>
+				<div class="ans4">Warwick,RI</div>
+			</div>
+		</div><!--End of questionary-->
+	</section>
+		
+		
+	
+		
+	<footer class="footer"><br>
+		<p>Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+	</footer>
+</body>
+</html>
